@@ -1,52 +1,16 @@
-//SELECIONOU AS TAGS 
-// INTERCEPTAR O CLIQUE NO BOTÃO 
-// PEGAR AS INFORMAÇÕES QUE ESTÃO DENTRO DO CAMPO 
+function obterMedia(){
+    var a = parseInt(document.getElementById("a").value);
+    var b = parseInt(document.getElementById("b").value);
+    var c = parseInt(document.getElementById("c").value);
 
-const btnSortear         = document.querySelector(".botaoSortear")
-const textarea           = document.querySelector("textarea")
-const tagResultado       = document.querySelector(".resultado p")
-const popUpResultado     = document.querySelector(".resultado")
-const btnFechar          = document.querySelector(".fechar")
+    var media = (a + b + c) / 3;
 
-//PEGANDO DADOS DO FOMRULÁRIO
-function pegarDadosFormulario(){
-    
-    //RECUPERANDO VALOR DO CAMPO (TEXTAREA)
-    const valorCampo  = textarea.value
-    const listaNomes  = valorCampo.split(",")
-    const tamanhoArray= listaNomes.length
-    const posicaoNome = gerarNumeroAleatorio(tamanhoArray)
-    const nome        = listaNomes[posicaoNome]
-    mostrarResultado(nome)
+    document.getElementById("resultado").innerHTML = "Resultado:" + media;
 
-    textarea.value = "wilson, Rosa, Heloisa, Helena"
-    
-}
 
-//INTERCEPTANDO O CLIQUE / EXECUTANDO FUNÇÃO
-btnSortear.addEventListener("click", pegarDadosFormulario)
-
-//GERANDO NÚMERO ALEATÓRIO
-function gerarNumeroAleatorio(tamanhoArray){
-    //RETORNA O NÚMERO
-    return  Math.floor(Math.random() * (tamanhoArray - 0) + 0)
 
 }
 
-function mostrarResultado(nome){
-
-    tagResultado.innerText = `Resultado: ${nome}`
-    popUpResultado.classList.add("mostrarResultado")
-    
-}
-
-
-function fecharPopUp(){
-
-    popUpResultado.classList.remove("mostrarResultado")
-
-}
-btnFechar.addEventListener("click", fecharPopUp)
 
 
 
