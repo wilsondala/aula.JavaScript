@@ -67,7 +67,7 @@ dividir  (/)
 modulo (de divisão) %
 Math: random(), round(), sqrt().
 
-* Atribuição
+* Atribuição de valor e representado por apenas um sinal de igual (=)
 a = b
 a += b
 a -= b
@@ -87,6 +87,128 @@ Diferente
 
 Um homem precisa atravessar um rio com um que possui capacidade apenas para carregar ele mesmo e mais um de seus três perteces, que são: um lobo, uma cabra e um maço de alfafa. Em cada viagem só poderá ir o homem e apenas um dos seus pertences. A seguinte regra deverá ser respeitada: o lobo não pode ficar sozinho com a cabra e nem a cabra sozinho com o maço de alfafa. Escreva um algoritimo para fazer a travessia dos pertences que estão em uma margem do rio para a outra 
 
-2. JS: Exibir média de 3 numeros com entradas pelo formulario Html 
+2. JS: Exibir média de 3 numeros com entradas pelo formulario html 
 
 apois isso enviar os links pelo Git ou do fiddle
+
+
+
+# Operadores
+
+## Aritméticos retornam o resultado de uma operação
+
++ somar
+- subtrair
+* multiplicar
+/ dividir 
+%"resto de divisão
+
+## comparadores matemáticos: teste lógico, retorno booleano (true / false);
+<   menor que
+>   maior que
+<=  menor ou igual
+>=  maior ou igual
+
+## comparadores Lógicos: teste lógico, retorno booleano (true / false)
+
+==      igualdade entre sentenças (valor)
+!=      diferença entre sentenças  (valor)
+===     igualdade entre sentenças (valor e tipo)
+!==     diferenças entre sentenças (valor e tipo)
+
+a == b = true
+
+a != b = false
+
+
+## Operadores de lógica e junção lógica
+
+!     NÃO (NOT)
+&&    E (AND)
+|| OU (OR)
+
+O sinal de exlamação (!) é o operador NOT (não), utilizado para negar a sentença que vem na sequência.
+## exemplos:
+
+a != b         // o valor de a é diferente de b
+x !== y       // o valor e o tipo de x são diferente de y
+!a == b       // o valor de a não é igual ao valor de b
+
+### As condições lógicas são convertidas em numero binários 
+true é equivalente a 1
+false é equivalente a 0
+
+### Operador lógico de atribuição 
+
+tem a capacidade de atribuir valor a uma variavel a partir de uma condição lógica, economiza IFs 
+
+Exemplo: var meucarro = cor == "preto" ? "preto" : "branco";
+         let meuCarro = cor == "branco" ? "branco" : "vermelho";
+         resuldado da cor do carro vermelho
+
+## If
+
+if (...) {
+}
+
+## Exemplo: > 
+if (cor =="azul"){
+... meuCarro = "preto";
+... console.log (meuCarro);
+... }
+# R: preto
+
+
+
+## Else : serve para dar alternativa
+
+else {
+
+}
+## 1. Exemplo
+
+if (cor == "preto") {
+    meuCarro = "preto";
+} else {
+    meuCarro = "azul";
+}
+
+## 2. Exemplo
+if (cor == "preto") {
+    meuCarro = "preto";
+} else if (cor == "vermelho"){
+    meuCarro = "azul";
+}else if (cor == "verde"){
+    meuCarro = "branco";
+}else {
+    meuCarro = "rosa";
+}
+
+## Switch
+
+switch (cor) {
+    case 'branco' :
+        meuCarro = 'branco';
+        break;
+    case 'vermelho' :
+        meuCarro = 'vermelho';
+        break;
+    case 'amarelo' :
+        meuCarro = 'amarelo';
+        break;
+    default :
+        console.log('não temos a cor dejada');
+}
+
+## media
+
+var nota1 = 10;
+var nota2 = 8;
+var nota3 = 9;
+var nota4 = 7
+var media = (nota1 + nota2 + nota3 + nota4) / 4;
+if(media > 8 ) {
+    console.log("Aluno aprovado")
+} else {
+    console.log("Aluno em recuperação")
+}
