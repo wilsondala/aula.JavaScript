@@ -43,4 +43,52 @@ console.log("Media: " + media + " - " + resultado);
 }
 
 
+/*SEGUINDO COM A AULA DE JAVASCRIPT AULA SOBRE FUNÇÃO*/
 
+/*funcão Calculador buscar a media do aluno*/
+function calcularMedia( notas ) {
+
+    var soma = 0;
+    for( c = 0; c < notas.length; c++) {
+        soma += notas[c];
+    }
+
+    media = soma / notas.length;
+
+    return media;
+    
+    /*funcão para sabermos se o aluno aprovou*/   
+    
+}
+
+let media // escopo global
+
+/*function aprovacao( media ) { */
+
+function aprovacao( notas ) {
+		
+    let media = calcularMedia( notas );
+
+    let condicao = media >= 8 ? "aprovado" : "reprovado";
+
+    /*return condicao;*/
+    
+    return 'Média' + media + ' - Resultado: ' + condicao;
+}
+
+console.log( aprovacao([8, 8, 5]));
+
+console.log( aprovacao([8, 8, 10]));
+/*console.log para calcular Media da nota do aluno*/
+//console.log( "Média:" + calcularMedia([8, 8, 5]))
+/*console.log para saber se o aluno aprovou ou reprovou */
+//console.log( aprovacao( calcularMedia([8, 8, 5])))
+
+
+/*console.log( "Média:" + calcularMedia([8, 8, 6, 6, 3]))
+/*console.log para saber se o aluno aprovou ou reprovou */
+/*console.log( aprovacao( calcularMedia([8, 8, 4, 6, 3])))
+
+console.log( "Média:" + calcularMedia([8, 5, 4]))
+/*console.log para saber se o aluno aprovou ou reprovou */
+//console.log( aprovacao( calcularMedia([8, 8, 10, 6, 3])))

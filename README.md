@@ -290,3 +290,62 @@ if(media >= 7) {
 
 console.log("Media: " + media + " - " + resultado);
 }
+
+## Funções 
+- Evitar a repetição de código
+- Realizar chamadas dinâmicas de algoritmos
+
+## função calcular nota do aluno 
+# exemplo
+function calculador(notas) {
+
+    var notas = 0;
+    for( c = 0; c < notas.length; c++) {
+        notas += notas[c];
+    }
+
+    media = notas / notas.lenth;
+
+    return media;
+
+}
+
+## função saber se o aluno aprovou ##
+
+function aprovacao( media ) {
+
+    let condicao = media >= 7 ? "aprovado" : "reprovado";
+
+    return condicao;
+}
+console.log para calcular Media da nota do aluno*/
+console.log( "Média:" + calcularMedia([8, 8, 5]))
+console.log para saber se o aluno aprovou ou reprovou */
+console.log( aprovacao( calcularMedia([8, 8, 5])))
+
+
+console.log( "Média:" + calcularMedia([8, 8, 6, 6, 3]))
+## console.log para saber se o aluno aprovou ou reprovou
+console.log( aprovacao( calcularMedia([8, 8, 4, 6, 3])))
+
+console.log( "Média:" + calcularMedia([8, 5, 4]))
+## console.log para saber se o aluno aprovou ou reprovou 
+console.log( aprovacao( calcularMedia([8, 8, 10, 6, 3])))
+
+
+## tambem pode ser calculado da seguinte forma!
+
+let media: 
+
+
+function aprovacao( notas ) {
+		
+    let media = calcularMedia( notas );
+
+    let condicao = media >= 8 ? "aprovado" : "reprovado";
+    
+## algoritimo para saber se o aluno aprovou ou não 
+    return 'Média' + media + ' - Resultado: ' + condicao;
+}
+
+    console.log( aprovacao([8, 8, 5]));
