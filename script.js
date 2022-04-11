@@ -79,16 +79,19 @@ function aprovacao( notas ) {
 console.log( aprovacao([8, 8, 5]));
 
 console.log( aprovacao([8, 8, 10]));
+
+/*OUTRA FORMA DE ACHAR MEDIA E DAR O RESULTADO FINAL*/
+
 /*console.log para calcular Media da nota do aluno*/
-//console.log( "Média:" + calcularMedia([8, 8, 5]))
-/*console.log para saber se o aluno aprovou ou reprovou */
-//console.log( aprovacao( calcularMedia([8, 8, 5])))
+console.log( "Média:" + calcularMedia([8, 8, 5]))
+/*console.log para saber se o aluno aprovou ou reprovou*/
+console.log( aprovacao( calcularMedia([8, 8, 5])))
 
 
-/*console.log( "Média:" + calcularMedia([8, 8, 6, 6, 3]))
-/*console.log para saber se o aluno aprovou ou reprovou */
-/*console.log( aprovacao( calcularMedia([8, 8, 4, 6, 3])))
+console.log( "Média:" + calcularMedia([8, 8, 6, 6, 3]))
+/*console.log para saber se o aluno aprovou ou reprovou*/
+console.log( aprovacao( calcularMedia([8, 8, 4, 6, 3])))
 
 console.log( "Média:" + calcularMedia([8, 5, 4]))
 /*console.log para saber se o aluno aprovou ou reprovou */
-//console.log( aprovacao( calcularMedia([8, 8, 10, 6, 3])))
+console.log( aprovacao( calcularMedia([8, 8, 10, 6, 3])))
