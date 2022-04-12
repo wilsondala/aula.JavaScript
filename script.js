@@ -95,3 +95,34 @@ console.log( aprovacao( calcularMedia([8, 8, 4, 6, 3])))
 console.log( "Média:" + calcularMedia([8, 5, 4]))
 /*console.log para saber se o aluno aprovou ou reprovou */
 console.log( aprovacao( calcularMedia([8, 8, 10, 6, 3])))
+
+
+document.addEventlistemer('submit', function(evento){
+
+    evento.preventDefault();
+
+    let formulario = document.getElementById('formulario-01');
+
+    let dados = new FormData(formulario);
+
+    let objeto = {};
+
+    let notas = [];
+
+    for(let key of dados.keys()) {
+        objeto[key] = dados.get(key)
+
+        notas.push(dados.get(key));
+
+
+    }
+
+    console.log(notas);
+
+    console.log(objeto);
+
+    texto = aprovacao(notas);
+
+    document.getElementById('resultado').innerHTML = texto;
+
+});
