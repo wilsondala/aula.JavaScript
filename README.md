@@ -261,11 +261,10 @@ for(km = 0; km < revisão; km++){
 
 ## Cálculo de média de alunos
 
-var alunos = [
-    [6, 7, 8, 6],
+var alunos = [ [6, 7, 8, 6],
 [8, 5, 6, 8],
 [10, 6, 8, 7],
-[10, 7, 6, 9, 6],
+[10, 7, 6, 9,],
 [9, 6, 6, 6,]
 ]
 var nota = 0;
@@ -299,16 +298,18 @@ console.log("Media: " + media + " - " + resultado);
 # exemplo
 function calculador(notas) {
 
-    var notas = 0;
+    var soma = 0;
     for( c = 0; c < notas.length; c++) {
         notas += notas[c];
     }
 
-    media = notas / notas.lenth;
+    media = soma / notas.lenth;
 
     return media;
 
 }
+
+//console.log("Media:" + calcularMedia([8, 8]))
 
 ## função saber se o aluno aprovou ##
 
@@ -349,3 +350,13 @@ function aprovacao( notas ) {
 }
 
     console.log( aprovacao([8, 8, 5]));
+
+## AULA 4 VARIÁVEIS
+
+Tipos de Variáveis
+
+- VAR
+- CONST
+- LET
+- STRING
+- ARRAY

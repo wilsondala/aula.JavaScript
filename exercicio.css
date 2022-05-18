@@ -1,0 +1,22 @@
+input, button {
+    display: block;
+    margin: 10px;
+    align-items: center;
+    text-align: center;
+    
+  }
+
+  .titulo {
+      background: royalblue;
+      width: 20%;
+      align-items: center;
+      text-align: center;
+      
+  }
+.botao{
+    color: black;
+    background-color: #aaa;
+    align-items: center;
+    text-align: center;
+}
+

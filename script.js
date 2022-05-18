@@ -1,5 +1,5 @@
 
-/*function obterMedia(){
+function obterMedia(){
     var a = parseInt(document.getElementById("a").value);
     var b = parseInt(document.getElementById("b").value);
     var c = parseInt(document.getElementById("c").value);
@@ -8,121 +8,121 @@
 
     document.getElementById("resultado").innerHTML = "Resultado:" + media;
 
-}*/
+ }
 
 
 
-var alunos = [
-    [6, 7, 8, 6],
-[8, 5, 6, 8],
-[10, 6, 8, 7],
-[10, 7, 6, 9, 6],
-[9, 6, 6, 6,]
-]
-var nota = 0;
-for (var i = 0; i < alunos.length; i++){
+// //var alunos = [
+//     [6, 7, 8, 6],
+// [8, 5, 6, 8],
+// [10, 6, 8, 7],
+// [10, 7, 6, 9, 6],
+// [9, 6, 6, 6,]
+// ]
+// var nota = 0;
+// for (var i = 0; i < alunos.length; i++){
 
-nota = 0
-notasAluno = alunos[i]
-console.log("Aluno: " + parseInt(i+1));
-console.log("Notas: " + notasAluno);
+// nota = 0
+// notasAluno = alunos[i]
+// console.log("Aluno: " + parseInt(i+1));
+// console.log("Notas: " + notasAluno);
 
-for( c = 0; c < notasAluno.length; c++){
-nota += notasAluno[c];
-}
+// for( c = 0; c < notasAluno.length; c++){
+// nota += notasAluno[c];
+// }
 
-media = nota / 4;
+// media = nota / 4;
 
-if(media >= 7) {
-    resultado = "Aprovado";
-} else {
-    resultado = "reprovado";
-}
+// if(media >= 7) {
+//     resultado = "Aprovado";
+// } else {
+//     resultado = "reprovado";
+// }
 
-console.log("Media: " + media + " - " + resultado);
-}
+// console.log("Media: " + media + " - " + resultado);
+// }
 
 
-/*SEGUINDO COM A AULA DE JAVASCRIPT AULA SOBRE FUNÇÃO*/
+// /*SEGUINDO COM A AULA DE JAVASCRIPT AULA SOBRE FUNÇÃO*/
 
-/*funcão Calculador buscar a media do aluno*/
-function calcularMedia( notas ) {
+// /*funcão Calculador buscar a media do aluno*/
+// function calcularMedia( notas ) {
 
-    var soma = 0;
-    for( c = 0; c < notas.length; c++) {
-        soma += notas[c];
-    }
+//     var soma = 0;
+//     for( c = 0; c < notas.length; c++) {
+//         soma += notas[c];
+//     }
 
-    media = soma / notas.length;
+//     media = soma / notas.length;
 
-    return media;
+//     return media;
     
-    /*funcão para sabermos se o aluno aprovou*/   
+//     /*funcão para sabermos se o aluno aprovou*/   
     
-}
+// }
 
-let media // escopo global
+// let media // escopo global
 
-/*function aprovacao( media ) { */
+// /*function aprovacao( media ) { */
 
-function aprovacao( notas ) {
+// function aprovacao( notas ) {
 		
-    let media = calcularMedia( notas );
+//     let media = calcularMedia( notas );
 
-    let condicao = media >= 8 ? "aprovado" : "reprovado";
+//     let condicao = media >= 8 ? "aprovado" : "reprovado";
 
-    /*return condicao;*/
+//     /*return condicao;*/
     
-    return 'Média' + media + ' - Resultado: ' + condicao;
-}
+//     return 'Média' + media + ' - Resultado: ' + condicao;
+// }
 
-console.log( aprovacao([8, 8, 5]));
+// console.log( aprovacao([8, 8, 5]));
 
-console.log( aprovacao([8, 8, 10]));
+// console.log( aprovacao([8, 8, 10]));
 
-/*OUTRA FORMA DE ACHAR MEDIA E DAR O RESULTADO FINAL*/
+// /*OUTRA FORMA DE ACHAR MEDIA E DAR O RESULTADO FINAL*/
 
-/*console.log para calcular Media da nota do aluno*/
-console.log( "Média:" + calcularMedia([8, 8, 5]))
-/*console.log para saber se o aluno aprovou ou reprovou*/
-console.log( aprovacao( calcularMedia([8, 8, 5])))
-
-
-console.log( "Média:" + calcularMedia([8, 8, 6, 6, 3]))
-/*console.log para saber se o aluno aprovou ou reprovou*/
-console.log( aprovacao( calcularMedia([8, 8, 4, 6, 3])))
-
-console.log( "Média:" + calcularMedia([8, 5, 4]))
-/*console.log para saber se o aluno aprovou ou reprovou */
-console.log( aprovacao( calcularMedia([8, 8, 10, 6, 3])))
+// /*console.log para calcular Media da nota do aluno*/
+// console.log( "Média:" + calcularMedia([8, 8, 5]))
+// /*console.log para saber se o aluno aprovou ou reprovou*/
+// console.log( aprovacao( calcularMedia([8, 8, 5])))
 
 
-document.addEventlistemer('submit', function(evento){
+// console.log( "Média:" + calcularMedia([8, 8, 6, 6, 3]))
+// /*console.log para saber se o aluno aprovou ou reprovou*/
+// console.log( aprovacao( calcularMedia([8, 8, 4, 6, 3])))
 
-    evento.preventDefault();
-
-    let formulario = document.getElementById('formulario-01');
-
-    let dados = new FormData(formulario);
-
-    let objeto = {};
-
-    let notas = [];
-
-    for(let key of dados.keys()) {
-        objeto[key] = dados.get(key)
-
-        notas.push(dados.get(key));
+// console.log( "Média:" + calcularMedia([8, 5, 4]))
+// /*console.log para saber se o aluno aprovou ou reprovou */
+// console.log( aprovacao( calcularMedia([8, 8, 10, 6, 3])))
 
 
-    }
+// document.addEventlistemer('submit', function(evento){
 
-    console.log(notas);
+//     evento.preventDefault();
 
-    console.log(objeto);
+//     let formulario = document.getElementById('formulario-01');
 
-    texto = aprovacao(notas);
+//     let dados = new FormData(formulario);
 
-    document.getElementById('resultado').innerHTML = texto;
+//     let objeto = {};
 
-});
+//     let notas = [];
+
+//     for(let key of dados.keys()) {
+//         objeto[key] = dados.get(key)
+
+//         notas.push( parseInt(dados.get(key)));
+
+
+//     }
+
+//     console.log(notas);
+
+//     console.log(objeto);
+
+//     texto = aprovacao(notas);
+
+//     document.getElementById('resultado').innerHTML = texto;
+
+// });
