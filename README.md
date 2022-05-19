@@ -360,3 +360,19 @@ Tipos de Variáveis
 - LET
 - STRING
 - ARRAY
+
+
+
+
+
+<script src="</script>
+    <div class="container">
+
+        <form id="formulario-01">
+              <input type="text" placeholder="digite um número "name="n1">
+              <input type="text" placeholder="digite um número "name="n2">
+              <input type="text" placeholder="digite um número "name="n3">
+              <input type="text" placeholder="digite um número "name="n4">
+              <button type="submit">Enviar</button>
+        </form>
+    </div>  -->
