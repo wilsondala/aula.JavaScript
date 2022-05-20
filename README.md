@@ -362,17 +362,67 @@ Tipos de Variáveis
 - ARRAY
 
 
+## JAVASCRIPT III 
+## AULA 1 DOM
+
+Document object Model 
+Estrutura de um arquivo na web
+Representa documentos HTML ou XML
+Interface de programação 
+Não é uma linguagem de programação 
+É essencial para os JS entender o modelo de páginas web
 
 
+## PARA QUE SERVE DOM ?
 
-<script src="</script>
-    <div class="container">
+- Alterar a estrutura html
+- alterar o estilo da pagina
+- alterar conteudo da pagina
 
-        <form id="formulario-01">
-              <input type="text" placeholder="digite um número "name="n1">
-              <input type="text" placeholder="digite um número "name="n2">
-              <input type="text" placeholder="digite um número "name="n3">
-              <input type="text" placeholder="digite um número "name="n4">
-              <button type="submit">Enviar</button>
-        </form>
-    </div>  -->
+## COMO ACONTECE TODA ESSA ALTERAÇÃO ?
+
+- Disponibizando API (Aplication Programming Interface)
+- Rotinas e padroes estabelicidos 
+- Métodos (funções )
+- Árvore de elementos
+- Seletores
+- objetos (nós)
+
+## DOM É DIFRENTE DE JS?
+
+- O Dom pode ser usado por outras linguagens
+- Sem o Dom o JS não teria noção da página
+
+
+## - VANTAGENS DE USAR JAVASCRIPT
+- Código é executado por navegadores 
+- Tornar as paginas dinamicas 
+- Evitar Requisiçoes desnecessarias (performance)
+- SPA (Single Page Applications)
+- reagir rapidamente a ações dos usuários
+
+## DESVANTAGENS DE USAR O JAVASCRIPT
+- Codigo é executado por navegadores
+- O conteudo ñ fica visivel para indexadores da busca
+- Alterações em tempo de execução não ficam salvas no documento
+
+## Exemplos
+Selecione o objeto e disponibiliza (métodos / funções).callback
+
+- document.getElementById(id)
+- document.getElementsByTagName
+- document.createElement('div)
+- parentNode.appendChild(node) // html.appendchild('body')
+- element.innerHTML
+- element.style
+- element.setAttribute('name')
+- element.getAttribute('name')
+- element.addEventlistener()
+- window.location
+- console.log()
+- window.scrollTo(x, y)
+
+## REFERENCIAS
+- DOM https://dom.spec.whatwg.org/
+- Tecnologias JS: https://developer.mozilla.org/pt-BR/docs/web/javaScript/javaScript_technologies_overview
+- Motores de execução: https://pt.wikipedia.org/Lista_de_motores_de_renderiza%cC3%A7%C3%A3o
