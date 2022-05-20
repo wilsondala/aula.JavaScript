@@ -422,7 +422,24 @@ Selecione o objeto e disponibiliza (métodos / funções).callback
 - console.log()
 - window.scrollTo(x, y)
 
+
+
+## AULA - 02 
+## Seletores 
+
+# Tipos de seletores: 
+- seletores do tipo: Tag, ID, Class, Name, Query
+- Callback
+- getElementById()
+- getElementsByTagName()
+- getElementsByName()
+- getElementsByClassName()
+
+
+
+
 ## REFERENCIAS
 - DOM https://dom.spec.whatwg.org/
 - Tecnologias JS: https://developer.mozilla.org/pt-BR/docs/web/javaScript/javaScript_technologies_overview
 - Motores de execução: https://pt.wikipedia.org/Lista_de_motores_de_renderiza%cC3%A7%C3%A3o
+
