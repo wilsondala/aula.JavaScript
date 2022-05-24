@@ -1,0 +1,6 @@
+- Tag, ID, Class, Name, Query
+- Callback
+- getElementById()
+- getElementsByTagName()
+- getElementsByName()
+- getElementsByClassName()

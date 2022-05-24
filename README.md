@@ -437,9 +437,20 @@ Selecione o objeto e disponibiliza (métodos / funções).callback
 
 
 
+## AULA - 03 
+
+## FORMULARIO
+- Precisamos evitar q o usuario passe dados incorretos ou seja, para direcinar melhor o uso do nosso sistema.
+- proteger a injeção de codico malicioso
+- Evitar erros de processamento
+- Formatar dados para facilitar o processamento
+- Regex (expressoes regulares)
+
 
 ## REFERENCIAS
 - DOM https://dom.spec.whatwg.org/
 - Tecnologias JS: https://developer.mozilla.org/pt-BR/docs/web/javaScript/javaScript_technologies_overview
 - Motores de execução: https://pt.wikipedia.org/Lista_de_motores_de_renderiza%cC3%A7%C3%A3o
+
+- Expressoes Regulares: https://developer.mozilla.org/pt-BR/docs/web/JavaScript/Guide/Regular_Expressions
 
